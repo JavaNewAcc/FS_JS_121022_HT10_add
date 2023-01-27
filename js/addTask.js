@@ -11,11 +11,11 @@ window.onload = () => {
     divClick.style.bottom = '0px';
     divClick.style.left = '0px';
     divClick.style.backgroundColor = 'rgba(255, 0, 0, 0.5)'
-    divClick.style.height = '250px';
     // RED DIV: add image
-    let SVGobj1 = document.createElement('object');
-    SVGobj1.type = 'image/svg+xml';
-    SVGobj1.data = './img/basket.svg';
+    let SVGobj1 = document.createElement('img');
+    SVGobj1.src = './img/basket.svg'
+    // SVGobj1.type = 'image/svg+xml';
+    // SVGobj1.data = './img/basket.svg';
     divClick.appendChild(SVGobj1);
     // RED DIV: add text
     let label1 = document.createElement('p');
